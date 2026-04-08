@@ -13,7 +13,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(/Images/BodyBackground1.webp);
+    url(Images/BodyBackground1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(/Images/BodyBackground1.webp);
+    url(Images/BodyBackground1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ html{
     min-height: 60vh;
     background: 
         linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-        url(/Images/CoffeHeroStock.webp);
+        url(Images/CoffeHeroStock.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ html{
     min-height: 60vh;
     background: 
         linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-        url(/Images/HeroBackgroundStock2.webp);
+        url(Images/HeroBackgroundStock2.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -333,13 +333,13 @@ html{
     .HeroDiv2{
         width: 100%;
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(/Images/CoffeHeroStock.webp);
+        url(Images/CoffeHeroStock.webp);
     }
 
     .HeroDiv3{
         width: 100%;
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(/Images/HeroBackgroundStock2.webp);
+        url(Images/HeroBackgroundStock2.webp);
     }
 
     #HeroHeading2{
@@ -402,7 +402,7 @@ html{
     width: 50%;
     display: flex;
     min-height: 50vh;
-    background-image: url(/Images/OutdoorSeatingStock.webp);
+    background-image: url(Images/OutdoorSeatingStock.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -790,7 +790,7 @@ html{
     box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(/Images/OurStoryBackground1.webp);
+    url(Images/OurStoryBackground1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -806,7 +806,7 @@ html{
     box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/OurStoryBackground2.webp);
+    url(Images/OurStoryBackground2.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1058,7 +1058,7 @@ html{
     width: 100%;
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/BreakfastBackground.webp);
+    url(Images/BreakfastBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1073,7 +1073,7 @@ html{
     margin-top: clamp(80px, 8vw, 220px);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/LunchBackground.webp);
+    url(Images/LunchBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1088,7 +1088,7 @@ html{
     margin-top: clamp(80px, 8vw, 220px);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/PastriesBackground.webp);
+    url(Images/PastriesBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1103,7 +1103,7 @@ html{
     margin-top: clamp(80px, 8vw, 220px);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/DessertsBackground.webp);
+    url(Images/DessertsBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1118,7 +1118,7 @@ html{
     margin-top: clamp(80px, 8vw, 220px);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/HotDrinksBackground.webp);
+    url(Images/HotDrinksBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1133,7 +1133,7 @@ html{
     margin-top: clamp(80px, 8vw, 220px);
     background: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(/Images/ColdDrinksBackground.webp);
+    url(Images/ColdDrinksBackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
