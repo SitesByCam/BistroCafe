@@ -1,4 +1,4 @@
-#🍽️ Bistro Café Website (Mock Template)
+🍽️ Bistro Café Website (Mock Template)
 
 A modern, responsive bistro café website template created to showcase clean design, user experience, and front-end development skills.
 
