@@ -1,0 +1,1987 @@
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.AboutUsBody{
+    margin: 0%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(/Images/BodyBackground1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.IndexBody{
+    margin: 0%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(/Images/BodyBackground1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Header*/
+.Navbar{
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(rgb(168, 127, 89), rgb(145, 98, 54), rgb(121, 58, 0) );
+    position: relative;
+}
+
+#LogoText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+.NavLinks{
+    display: flex;
+    gap: 65px;
+    width: 35%;
+}
+
+.NavLinksLeft{
+    justify-content: flex-end;
+}
+
+.NavLinksRight{
+    justify-content: flex-start;
+}
+
+.NavLinks a{
+    color: white;
+    text-decoration: none;
+    font-size: clamp(15px, 2vw, 25px);
+    transition: 0.5s;
+}
+
+.NavLinks a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 50%;
+    color: grey;
+}
+
+.NavLogo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.NavLogo img{
+    max-width: clamp(180px, 50vw, 300px);
+    width: 100%;
+}
+
+.MenuToggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.MobileMenu{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(121, 58, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.MobileMenu a{
+    padding: 15px;
+    border-top: 1px solid #fffafa;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.MobileMenu a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    color: grey;
+}
+
+@media (max-width: 1024px){
+
+    .NavLinks{
+        display: none;
+    }
+
+    .MenuToggle{
+        display: block;
+    }
+
+    .NavLogo{
+        width: auto;
+    }
+
+    .Navbar{
+        padding: 20px 5%;
+        width: 100%;
+    }
+
+}
+
+
+
+/*Hero*/
+.HeroDivWrapper{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+}
+
+.HeroDiv{
+    width: 50%;
+    display: flex;
+    min-height: 60vh;
+    flex-direction: column;
+    text-align: left;
+    justify-content: baseline;
+    align-items: center;
+    background: linear-gradient(135deg, #F8F4EE, #D9C2A3, #A67C52);
+}
+
+.HeroDiv2{
+    width: 50%;
+    display: flex;
+    min-height: 60vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url(/Images/CoffeHeroStock.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.HeroDiv3{
+    width: 50%;
+    display: flex;
+    min-height: 60vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url(/Images/HeroBackgroundStock2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#HeroHeading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(35px, 2vw, 80px);
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#HeroInfo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(25px, 2vw, 35px);
+    color: #4b3224;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#HeroInfo2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: clamp(20px, 1vw, 35px);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.HeroButton{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 30px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: rgb(121, 58, 0);
+    padding: 2%;
+    border-radius: 20%;
+    width: 30%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.HeroButton:hover{
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+#HeroHeading2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: clamp(30px, 2vw, 80px);
+    margin-bottom: 1%;
+    margin-top: 2%;
+    display: none;
+}
+
+#HeroInfo3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 40px);
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    display: none;
+}
+
+#HeroInfo4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: clamp(15px, 2vw, 30px);
+    color: rgb(255, 255, 255);
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: left;
+    display: none;
+}
+
+.HeroButton2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(15px, 2vw, 25px);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 20%;
+    width: 25%;
+    margin-bottom: 2%;
+    display: none;
+}
+
+.HeroButton2:hover{
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+    transform: scale(1.1);
+    display: none;
+}
+
+@media (max-width: 1440px){
+    .HeroDiv{
+        min-height: 45vh;
+    }
+
+    .HeroDiv2{
+        min-height: 45vh;
+    }
+    
+    .HeroDiv3{
+        min-height: 45vh;
+    }
+
+    .HeroDivWrapper{
+        min-height: 45vh;
+    }
+}
+
+@media (max-width: 1024px){
+    .HeroDiv{
+        display: none;
+    }
+
+    .HeroDiv2{
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(/Images/CoffeHeroStock.webp);
+    }
+
+    .HeroDiv3{
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(/Images/HeroBackgroundStock2.webp);
+    }
+
+    #HeroHeading2{
+        display: flex;
+    }
+
+    #HeroInfo3{
+        display: flex;
+    }
+
+    #HeroInfo4{
+        display: flex;
+    }
+
+    .HeroButton2{
+        display: flex;
+    }
+
+    .HeroButton2:hover{
+        display: flex;
+    }
+}
+
+@media (max-width: 768px){
+    .HeroDiv{
+        min-height: 35vh;
+    }
+
+    .HeroDiv2{
+        min-height: 35vh;
+    }
+
+    .HeroDiv3{
+        min-height: 35vh;
+    }
+
+    .HeroDivWrapper{
+        min-height: 35vh;
+    }
+}
+
+
+
+/*Outdoor Seating Code*/
+#OutdoorSeating{
+    width: 100%;
+    margin-top: clamp(120px, 15vw, 400px);
+}
+
+.OutdoorSeatingWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 50vh;
+}
+
+.OutdoorSeatingChild1{
+    width: 50%;
+    display: flex;
+    min-height: 50vh;
+    background-image: url(/Images/OutdoorSeatingStock.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.OutdoorSeatingChild2{
+    width: 50%;
+    display: flex;
+    min-height: 50vh;
+    justify-content: baseline;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("/Images/OutdoorSeatingStock2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#OutdoorSeatingHeader{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(25px, 2vw, 40px);
+    color: #4b3224;
+    text-align: center;
+}
+
+#OutdoorSeatingInformation{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: clamp(22px, 1vw, 35px);
+    color: block;
+}
+
+@media(max-width:1024px){
+    
+    .OutdoorSeatingWrapper{
+        min-height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .OutdoorSeatingChild1{
+        min-height: 40vh;
+    }
+
+    .OutdoorSeatingChild2{
+        min-height: 40vh;
+    }
+
+    #OutdoorSeatingInformation{
+        font-size: clamp(15px, 1vw, 22px);
+    }
+}
+
+@media(max-width:768px){
+    
+    .OutdoorSeatingWrapper{
+        min-height: 40vh;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .OutdoorSeatingChild1{
+        min-height: 40vh;
+        width: 100%;
+    }
+
+    .OutdoorSeatingChild2{
+        min-height: 40vh;
+        width: 100%;
+    }
+
+    #OutdoorSeatingInformation{
+        font-size: clamp(18px, 1vw, 24px);
+    }
+}
+
+
+
+/*Services Code*/
+#ServicesSection{
+    width: 100%;
+    padding: clamp(40px, 6vw, 90px) 0;
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.ServicesWrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.ServicesHeading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: clamp(28px, 3vw, 50px);
+    text-align: center;
+    color: #4b3224;
+    margin: 0 0 clamp(25px, 4vw, 50px) 0;
+}
+
+.ServicesGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 2.5vw, 35px);
+    align-items: stretch;
+}
+
+.ServiceCard{
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ServiceCard img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: 0.5s;
+}
+
+.ServiceCard img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ServiceCardContent{
+    padding: clamp(18px, 2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.ServiceCardContent h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: clamp(22px, 2vw, 30px);
+    color: #222222;
+    margin: 0;
+}
+
+.ServiceInfo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+    flex: 1;
+}
+
+.ServicePrice{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 1.5vw, 24px);
+    color: #2f6b45;
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    .ServicesWrapper{
+        width: 88%;
+    }
+
+    .ServicesGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .ServicesWrapper{
+        width: 92%;
+    }
+
+    .ServiceCard img{
+        aspect-ratio: 16 / 10;
+    }
+}
+
+
+
+/*Gallery Section*/
+#SliderSection {
+    width: min(90%, 900px);
+    margin: 50px auto;
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.SliderWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    background: #ddd;
+}
+
+.Slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.SlideText {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: clamp(14px, 2vw, 22px);
+}
+
+.Prev,
+.Next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: clamp(18px, 2vw, 30px);
+    width: clamp(38px, 4vw, 50px);
+    height: clamp(38px, 4vw, 50px);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.Prev:hover,
+.Next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.Prev {
+    left: 15px;
+}
+
+.Next {
+    right: 15px;
+}
+
+.Dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.Dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Dot.Active {
+    background: #333;
+    transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    #SliderSection {
+    width: 95%;
+    margin: 30px auto;
+    }
+
+    .SlideText {
+    left: 4%;
+    right: 4%;
+    bottom: 6%;
+    padding: 10px 14px;
+    }
+
+    .Prev {
+    left: 8px;
+    }
+
+    .Next {
+    right: 8px;
+    }
+}
+
+
+
+/*About Us Page*/
+
+/*Introduction Code*/
+#IntroSection{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.IntroWrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.IntroTag{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(20px, 2vw, 60px);
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    text-decoration-color: #4b3224; 
+}
+
+#IntroHeader{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(15px, 1.5vw, 40px);
+}
+
+@media (max-width:425px) {
+    .IntroWrapper{
+        width: 100%;
+    }
+}
+
+
+/*OurStory Code*/
+#OurStory{
+    width: 100%;
+    margin-top: clamp(40px, 8vw, 80px);
+}
+
+.StoryWrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10%;
+    background: linear-gradient(180deg, #F8F4EE, #D9C2A3, #A67C52);
+    padding: 5%;
+    border-radius: clamp(5%, 10%, 20%);
+    box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
+}
+
+.StoryDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10%;
+    min-height: 500px;
+    box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(/Images/OurStoryBackground1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ImportantInformationDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10%;
+    min-height: 500px;
+    box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/OurStoryBackground2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#OurStoryHeading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(20px, 2vw, 40px);
+    margin-bottom: 0%;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    text-decoration-thickness: 5%;
+    text-decoration-color: #4b3224;
+}
+
+#OurStoryParagraph{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 20px);
+    color: rgb(0, 0, 0);
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#ImportantInformationHeading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(20px, 2vw, 40px);
+    margin-bottom: 0%;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    text-decoration-thickness: 5%;
+    text-decoration-color: #4b3224;
+}
+
+#ImportantInformationParagraph{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 20px);
+    color: rgb(0, 0, 0);
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+@media (max-width: 1024px) {
+    .StoryWrapper {
+        flex-direction: column; 
+        gap: 20px; 
+        width: 100%;
+    }
+
+    .StoryDiv,
+    .ImportantInformationDiv {
+        width: 100%; 
+        min-height: 300px;
+    }
+}
+
+
+
+/*Reviews Code*/
+#ReviewsSection{
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.ReviewsContainer {
+    display: flex;
+    justify-content: center; 
+    gap: clamp(20px, 4vw, 60px);
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ReviewCard {
+    width: clamp(260px, 30%, 400px); 
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    background-color: white;
+    box-shadow: 0 0 clamp(10px, 2vw, 30px) rgba(0, 0, 0, 0.5);
+}
+
+.ReviewCard h3 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: clamp(18px, 1vw, 28px);
+}
+
+.ReviewCard p {
+    font-style: italic;
+    color: #555;
+    font-size: clamp(12px, 1vw, 18px);
+}
+
+.ReviewCard h4 {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: clamp(14px, 1vw, 22px);
+}
+
+.ReviewCard span {
+    color: grey;
+    font-size: clamp(10px, 1vw, 15px);
+}
+
+@media (max-width: 900px) {
+    .ReviewsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ReviewCard{
+        width: 60%;
+    }
+
+    .ReviewsContainer {
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 425px) {
+    .ReviewCard{
+        width: 100%;
+    }
+
+    .ReviewsContainer {
+        margin-top: 5%;
+    }
+}
+
+#ReviewsSection h2{
+    text-align: center;
+    font-size: clamp(20px, 2vw, 80px);
+    color: #4b3224;
+    width: 60%;
+    margin: auto;
+    padding-top: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    text-decoration-thickness: 5%;
+    text-decoration-color: #4b3224;
+}
+
+.ReviewCard:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Menu Code*/
+
+/*Introduction Code*/
+#MenuIntroSection{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.MenuTag{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4b3224;
+    font-size: clamp(20px, 2vw, 60px);
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.MenuIntroWrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+/*Navbar menu Code*/
+.MenuCategoryNav {
+    width: min(1100px, 92%);
+    margin: clamp(25px, 4vw, 50px) auto clamp(40px, 6vw, 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.5vw, 18px);
+    padding: clamp(14px, 2vw, 24px);
+    background: rgba(248, 244, 238, 0.9);
+    border-radius: clamp(18px, 2vw, 28px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.MenuCategoryNav a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(15px, 1vw, 20px);
+    font-weight: 600;
+    color: #5c3415;
+    background: linear-gradient(180deg, #f3e4d2 0%, #ead6bf 100%);
+    padding: clamp(10px, 1vw, 14px) clamp(16px, 2vw, 24px);
+    border-radius: 999px;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+    white-space: nowrap;
+    box-shadow: 0 0 clamp(5px, 2vw, 5px) rgba(0, 0, 0, 0.5);
+}
+
+.MenuCategoryNav a:hover {
+    background: linear-gradient(180deg, #b88a5a 0%, #9d6d3d 100%);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 425px) {
+    .MenuCategoryNav {
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .MenuCategoryNav a {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+}
+
+
+
+/*Breakfast Section Code*/
+#Breakfast{
+    width: 100%;
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/BreakfastBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Lunch{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/LunchBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Pastries{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/PastriesBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Desserts{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/DessertsBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#HotDrinks{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/HotDrinksBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ColdDrinks{
+    width: 100%;
+    margin-top: clamp(80px, 8vw, 220px);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/Images/ColdDrinksBackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Price{
+    color: green;
+    font-weight: 600;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #A67C52;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#backToTop:hover {
+    transform: translateY(-3px);
+    background: #8c6239;
+}
+
+
+.BreakfastWrapper{
+    width: 600px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 0.5%;
+    background-color: white;
+    height: fit-content;
+    padding: 2%;
+    border-radius: 10%;
+    box-shadow: 0 0 clamp(10px, 2vw, 20px) rgba(0, 0, 0, 0.6);
+}
+
+#MenuHeader{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(30px, 4vw, 100px);
+    color: #4b3224;
+    text-align: center;
+}
+
+.BreakfastChild1{
+    display: flex;
+    justify-content: left;
+    width: 500px;
+}
+
+.MenuImg{
+    width: 500px;
+}
+
+.BreakfastItem{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 22px);
+    color: rgb(0, 0, 0);
+    margin-bottom: 4%;
+    width:500px;
+}
+
+.BreakfastItemDescription{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(10px, 2vw, 20px);
+    color: rgb(0, 0, 0);
+    margin-top: 0%;
+    width:500px;
+}
+
+@media (max-width:1440px){
+    .BreakfastWrapper{
+        width: 500px;
+    }
+
+    .BreakfastChild1{
+        width: 400px;
+    }
+
+    .MenuImg{
+        width: 400px;
+    }
+
+    .BreakfastItem{
+        width: 400px;
+    }
+
+    .BreakfastItemDescription{
+        width: 400px;
+    }
+}
+
+@media (max-width:1024px){
+    .BreakfastWrapper{
+        width: 250px;
+    }
+
+    .BreakfastChild1{
+        width: 200px;
+    }
+
+    .MenuImg{
+        width: 200px;
+    }
+
+    .BreakfastItem{
+        width: 200px;
+        font-size: clamp(16px, 2vw, 18px);
+    }
+
+    .BreakfastItemDescription{
+        width: 200px;
+        font-size: clamp(14px, 2vw, 16px);
+    }
+}
+
+@media (max-width:768px){
+    #Breakfast{ 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Lunch{ 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Pastries{ 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Desserts{ 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #HotDrinks{ 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ColdDrinks{ 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .BreakfastWrapper{
+        width: 250px;
+        justify-self: center;
+    }
+
+    .BreakfastChild1{
+        width: 200px;
+    }
+
+    .MenuImg{
+        width: 200px;
+    }
+
+    .BreakfastItem{
+        width: 200px;
+        font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .BreakfastItemDescription{
+        width: 200px;
+        font-size: clamp(12px, 2vw, 14px);
+    }
+}
+
+@media (max-width:425px){
+    .BreakfastWrapper{
+        width: 240px;
+        padding: 5%;
+    }
+
+    .MenuImg{
+        width: 100px;
+    }
+
+    #Breakfast, #Lunch, #Pastries, #Desserts, #HotDrinks, #ColdDrinks{
+        background: none;
+}
+}
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(4px);
+    transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+
+/*Gallery Code*/
+
+/*Lightbox Code*/
+.GallerySection{
+    width: 100%;
+    padding: clamp(60px, 8vw, 120px) 0;
+}
+
+.GalleryWrapper{
+    width: min(90%, 1200px);
+    margin: auto;
+    text-align: center;
+    margin-top: clamp(80px, 8vw, 150px);
+}
+
+.GalleryHeading{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(30px, 4vw, 65px);
+    font-weight: 600;
+    color: #4b3224;
+    margin-bottom: 12px;
+}
+
+.GalleryHeading2{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(25px, 4vw, 48px);
+    font-weight: 600;
+    color: #4b3224;
+    margin-bottom: 12px;
+}
+
+.GalleryText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 1.4vw, 19px);
+    color: #6a4b3a;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.GalleryGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+@media(max-width:1024px){
+    .GalleryGrid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media(max-width:768px){
+    .GalleryGrid{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+.GalleryImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.GalleryImage:hover{
+    transform: scale(1.03);
+    box-shadow: 0 14px 30px rgba(75, 50, 36, 0.18);
+}
+
+.Lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(34, 24, 18, 0.88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.Lightbox.Active{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.LightboxContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    transform: scale(0.95);
+    transition: transform 0.35s ease;
+}
+
+.Lightbox.Active .LightboxContent{
+    transform: scale(1);
+}
+
+.LightboxImage{
+    max-width: 100%;
+    max-height: 75vh;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    border: 4px solid #f3e7d7;
+}
+
+.LightboxCaption{
+    margin-top: 18px;
+    color: #f8f4ee;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(15px, 1.4vw, 18px);
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    padding: 0 15px;
+}
+
+.LightboxClose{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 42px;
+    color: #f8f4ee;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.LightboxClose:hover{
+    transform: scale(1.1);
+    color: #d9c2a3;
+}
+
+.LightboxArrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #f8f4ee;
+    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    user-select: none;
+}
+
+.LightboxArrow:hover{
+    background: rgba(0, 0, 0, 0.7);
+    color: #d9c2a3;
+}
+
+.LightboxArrow.Left{
+    left: 20px;
+}
+
+.LightboxArrow.Right{
+    right: 20px;
+}
+
+@media(max-width: 768px){
+    .LightboxImage{
+        max-height: 65vh;
+    }
+
+    .LightboxArrow{
+        font-size: 32px;
+        padding: 10px 14px;
+    }
+
+    .LightboxArrow.Left{
+        left: 10px;
+    }
+
+    .LightboxArrow.Right{
+        right: 10px;
+    }
+
+    .LightboxClose{
+        top: 15px;
+        right: 20px;
+        font-size: 36px;
+    }
+
+    .LightboxCaption{
+        margin-top: 14px;
+    }
+}
+
+
+
+/*Contact Us Page Code*/
+
+/*Map Code*/
+.DirectionsSection{
+    width: 100%;
+    padding: clamp(70px, 8vw, 130px) 0;
+}
+
+.DirectionsWrapper{
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+.DirectionsIntro{
+    text-align: center;
+    margin-bottom: clamp(30px, 4vw, 50px);
+}
+
+.DirectionsHeading{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(30px, 4vw, 60px);
+    font-weight: 600;
+    color: #4b3224;
+    margin-bottom: 12px;
+}
+
+.DirectionsText{
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(16px, 1.4vw, 19px);
+    line-height: 1.6;
+    color: #6a4b3a;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.ButtonsDiv{
+    width: 100%;
+    background: linear-gradient(180deg, #f8f4ee, #f3e7d7);
+    border-radius: 24px;
+    padding: clamp(20px, 3vw, 35px);
+    box-shadow: 0 12px 30px rgba(75, 50, 36, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.DirectionsForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#postcodeInput{
+    flex: 1 1 320px;
+    max-width: 500px;
+    width: 100%;
+    height: 56px;
+    padding: 0 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(75, 50, 36, 0.18);
+    background-color: #fffdf9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 1.4vw, 19px);
+    color: #4b3224;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+#postcodeInput:focus{
+    border-color: #a67c52;
+    box-shadow: 0 0 0 4px rgba(166, 124, 82, 0.15);
+}
+
+#postcodeInput::placeholder{
+    color: #8a6a58;
+}
+
+#goBtn{
+    padding: 16px 26px;
+    border: none;
+    border-radius: 14px;
+    background: #4b3224;
+    color: #f8f4ee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 8px 20px rgba(75, 50, 36, 0.2);
+}
+
+#goBtn:hover{
+    background: #6a4b3a;
+    transform: translateY(-2px);
+}
+
+#goBtn:active{
+    transform: translateY(0);
+}
+
+#status{
+    min-height: 24px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.98rem;
+    color: #6a4b3a;
+    margin: 0;
+}
+
+#mapFrame{
+    width: 100%;
+    min-height: 550px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    background-color: #e9dfd2;
+}
+
+.Frame{
+    display: block;
+}
+
+@media (max-width: 768px){
+    .DirectionsForm{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #postcodeInput{
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        height: 56px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    #goBtn{
+        width: 100%;
+    }
+
+    #mapFrame{
+        min-height: 420px;
+    }
+}
+
+@media (max-width:425px){
+    #mapFrame{
+        min-height: 220px;
+    }
+}
+
+.SocialsHero{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(50px, 3vw, 100px);
+    margin-bottom: 1%;
+}
+
+.SocialImages{
+    width: clamp(50px, 4vw, 100px);
+    height: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.SocialImages:hover{
+    transform: translateY(-10px);
+}
+
+.SocialImages2{
+    width: clamp(50px, 4vw, 100px);
+    height: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.SocialImages2:hover{
+    transform: translateY(-10px);
+}
+
+.SocialsHero2{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(50px, 3vw, 100px);
+    margin-bottom: 1%;
+    display: none;
+}
+
+.SocialImages2{
+    width: clamp(50px, 4vw, 100px);
+    height: auto;
+}
+
+@media (max-width: 1024px){
+    .SocialImages2{
+        width: clamp(40px, 4vw, 50px);
+        height: auto;
+    }
+    .SocialsHero2{
+        gap: clamp(20px, 4vw, 50px);
+        display: flex;
+    }
+}
+
+
+/* Contact Form Section Code */
+.ContactSection{
+    width: 50%;
+    padding-left: clamp(60px, 8vw, 120px) 0;
+    padding-right: clamp(60px, 8vw, 120px) 0;
+    padding-top: clamp(20px, 8vw, 50px);
+    padding-bottom: clamp(50px, 8vw, 80px);
+    background: linear-gradient(180deg, #f8f4ee, #f3e7d7);
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.ContactWrapper{
+    width: min(90%, 700px);
+    margin: auto;
+    text-align: center;
+}
+
+.ContactHeading{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 600;
+    color: #4b3224;
+    margin-bottom: 10px;
+}
+
+.ContactText{
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(15px, 1.4vw, 18px);
+    color: #6a4b3a;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    padding: clamp(20px, 3vw, 35px);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.FormRow{
+    display: flex;
+    gap: 15px;
+}
+
+@media(max-width:1024px){
+    .ContactSection{
+        width: 100%;
+        padding: clamp(60px, 8vw, 120px) 0;
+        background: linear-gradient(180deg, #f8f4ee, #f3e7d7);
+        margin: auto;
+}
+}
+
+@media(max-width:768px){
+    .FormRow{
+        flex-direction: column;
+    }
+}
+
+.InputGroup{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.InputGroup label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #4b3224;
+}
+
+.InputGroup input,
+.InputGroup textarea,
+.InputGroup select{
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: #f8f4ee;
+    transition: 0.3s ease;
+}
+
+.InputGroup input:focus,
+.InputGroup textarea:focus,
+.InputGroup select:focus{
+    outline: none;
+    border-color: #a67c52;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(166, 124, 82, 0.1);
+}
+
+.ContactBtn{
+    margin-top: 10px;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: #4b3224;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(75, 50, 36, 0.2);
+}
+
+.ContactBtn:hover{
+    background: #6a4b3a;
+    transform: translateY(-2px);
+}
+
+
+
+/*Footer Code*/
+footer{
+    background: linear-gradient(rgb(121, 58, 0), rgb(121, 58, 0), rgb(145, 98, 54), rgb(168, 127, 89));
+    width: 100%;
+    justify-self: center;
+    height: fit-content;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    margin-top: clamp(80px, 8vw, 220px);
+}
+
+.FooterContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.FooterLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-size: clamp(18px, 2vw, 25px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.FooterLinks a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.FooterSocials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.FooterSocials a {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+
+.FooterSocials a + a {
+    border-left: 1px solid white;
+}
+
+.FooterSocials img{
+    width: clamp(30px, 2vw, 40px);
+    height: auto;
+}
+
+.FooterLinks a + a {
+    border-left: 1px solid #ffffff;
+}
+
+#FooterCopyright{
+    color: white;
+    width: 20%;
+    text-align: center;
+    font-size: clamp(18px, 2vw, 25px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media(max-width:1024px){
+    footer{
+        width: 100%;
+    }
+
+    .FooterContent{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #FooterCopyright,
+    .FooterLinks,
+    .FooterSocials{
+        width: 100%;
+        justify-content: center;
+    }
+}

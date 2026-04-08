@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Template 2</title>
+    <meta name="description" content="Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body class="AboutUsBody">
+<header>
+    <nav class="Navbar">
+        
+        <div class="NavLinks NavLinksLeft">
+            <a href="/index.html">Home</a>
+            <a href="/AboutUs.html">About Us</a>
+        </div>
+
+        <div class="NavLogo">
+            <img src="/Images/BistroCafeLogo.webp" alt="Logo">
+        </div>
+
+        <div class="NavLinks NavLinksRight">
+            <a href="/Gallery.html">Gallery</a>
+            <a href="/Menu.html">Our Menu</a>
+        </div>
+
+
+        <div class="MenuToggle" id="MenuToggle">
+            ☰
+        </div>
+
+    </nav>
+
+    <div class="MobileMenu" id="MobileMenu">
+        <a href="/index.html">Home</a>
+        <a href="/AboutUs.html">About Us</a>
+        <a href="/Gallery.html">Gallery</a>
+        <a href="/Menu.html">Our Menu</a>
+    </div>
+
+</header>
+
+<main>
+
+    <section id="Hero">
+        <div class="HeroDivWrapper">
+            <div class="HeroDiv">
+                <h1 id="HeroHeading">My Bistro Café</h1>
+                <P id="HeroInfo">A cosy place for quality food and coffee</P>
+                <P id="HeroInfo2">Whether you're planning a visit, have a question about our menu, or want to make a booking, we’d love to hear from you. Our team is always happy to help and make your experience as smooth and enjoyable as possible, whether it’s your first visit or you’re returning to see us again.<br><br>You’ll find all the details you need below, from directions to contact information, so getting in touch is simple and straightforward. We aim to make every visit relaxed and welcoming from the moment you arrive.<br><br>Use the options below to get in touch or find your way to our bistro café — we look forward to welcoming you soon.</P>
+                <br>
+                <div class="SocialsHero">
+                    <a href=""><img src="/Images/InstagramIconWhite.webp" class="SocialImages" alt="InstagramLogo"></a>
+                    <a href=""><img src="/Images/FacebookIconWhite.webp" class="SocialImages" alt="FacebookLogo"></a>
+                    <a href=""><img src="/Images/PhoneIconWhite.webp" class="SocialImages" alt="PhoneIcon"></a>
+                </div>
+            </div>
+            <div class="HeroDiv3">
+                <h1 id="HeroHeading2">My Bistro Café</h1>
+                <P id="HeroInfo3">A cosy place for quality food and coffee</P>
+                <P id="HeroInfo4">Whether you're planning a visit, have a question about our menu, or want to make a booking, we’d love to hear from you. Our team is always happy to help and make your experience as smooth and enjoyable as possible, whether it’s your first visit or you’re returning to see us again.<br><br>You’ll find all the details you need below, from directions to contact information, so getting in touch is simple and straightforward. We aim to make every visit relaxed and welcoming from the moment you arrive.<br><br>Use the options below to get in touch or find your way to our bistro café — we look forward to welcoming you soon.</P>
+                <br>
+                <div class="SocialsHero2">
+                    <a href=""><img src="/Images/InstagramIconWhite.webp" class="SocialImages2" alt="InstagramLogo"></a>
+                    <a href=""><img src="/Images/FacebookIconWhite.webp" class="SocialImages2" alt="FacebookLogo"></a>
+                    <a href=""><img src="/Images/PhoneIconWhite.webp" class="SocialImages2" alt="PhoneIcon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="DirectionsSection">
+        <div class="DirectionsWrapper">
+            <div class="DirectionsIntro">
+                <h2 class="DirectionsHeading">Find Us</h2>
+                <p class="DirectionsText">
+                    Planning your visit? Enter your postcode or address below to get directions straight to our bistro café.
+                </p>
+            </div>
+
+            <div class="ButtonsDiv">
+                <div class="DirectionsForm">
+                    <input id="postcodeInput" type="text" placeholder="Enter your postcode or address">
+                    <button id="goBtn">Show Directions</button>
+                </div>
+
+                <p id="status"></p>
+
+                <iframe class="Frame" id="mapFrame"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="ContactSection">
+        <div class="ContactWrapper">
+
+            <h2 class="ContactHeading">Get In Touch</h2>
+            <p class="ContactText">
+                Have a question, booking enquiry, or special request? Fill out the form below and we’ll get back to you as soon as possible.
+            </p>
+
+            <form class="ContactForm">
+
+                <div class="FormRow">
+                    <div class="InputGroup">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="InputGroup">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+                </div>
+
+                <div class="InputGroup">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="InputGroup">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="InputGroup">
+                    <label for="enquiry">Enquiry Type</label>
+                    <select id="enquiry">
+                        <option>General Enquiry</option>
+                        <option>Booking Request</option>
+                        <option>Private Event</option>
+                        <option>Feedback</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="ContactBtn">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+
+
+</main>
+
+<footer>
+    <div class="FooterContent">
+
+        <p id="FooterCopyright">©BistroCafé</p>
+
+        <div class="FooterLinks">
+            <a href="#Hero">Top</a>
+        </div>
+        <div class="FooterSocials">
+            <a href=""><img src="/Images/InstagramIconWhite.webp" alt="InstagramLogo"></a>
+            <a href=""><img src="/Images/FacebookIconWhite.webp" alt="FacebookLogo"></a>
+            <a href="tel"><img src="/Images/PhoneIconWhite.webp" alt="PhoneIcon"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="/JavaScript/NavBar.js"></script>
+<script>
+
+    const defaultPostcode = "L1 8JQ";
+    const destination = "L1 8JQ";
+    const apiKey = "AIzaSyDVWgRBommQKj2VtwWpWa29T6mtZZk5J3g";
+ 
+    function showDirections() {
+      const status = document.getElementById("status");
+      let origin = document.getElementById("postcodeInput").value.trim();
+      if (!origin) {
+        origin = defaultPostcode;
+        document.getElementById("postcodeInput").value = defaultPostcode;
+      }
+      const url =
+        `https://www.google.com/maps/embed/v1/directions?key=${apiKey}` +
+        `&origin=${encodeURIComponent(origin)}` +
+        `&destination=${encodeURIComponent(destination)}` +
+        `&mode=driving`;
+      console.log("MAP URL:", url);
+      status.textContent = "";
+      document.getElementById("mapFrame").src = url;
+    }
+    document.getElementById("goBtn").addEventListener("click", showDirections);
+</script>
+</body>
